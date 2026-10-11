@@ -7,18 +7,18 @@ services:
       - "5555:5000"
     restart: unless-stopped
 
-  book:
+  book_service:
     image: vamsimattepu123/python-app-2:latest
-    container_name: book
+    container_name: book_service
     ports:
-      - "5002:5000"
+      - "5556:5000"
     restart: unless-stopped
 
-  borrow:
+  borrow_service:
     image: vamsimattepu123/python-app-3:latest
     container_name: borrow
     ports:
-      - "5003:5000"
+      - "5557:5000"
     restart: unless-stopped
 
   db:
