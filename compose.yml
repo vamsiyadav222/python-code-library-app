@@ -21,8 +21,8 @@ services:
       - "5003:5000"
     restart: unless-stopped
 
-  database:
-    container_name: database
+  db:
+    container_name: db
     image: vamsimattepu123/python-app-4:latest
     ports:
      - "3306:3306"
