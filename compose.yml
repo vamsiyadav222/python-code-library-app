@@ -4,7 +4,7 @@ services:
     image: vamsimattepu123/python-app-1:latest
     container_name: auth_service
     ports:
-      - "5001:5000"
+      - "5555:5000"
     restart: unless-stopped
 
   book:
