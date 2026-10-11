@@ -1,8 +1,8 @@
 
 services:
-  auth:
+  auth_service:
     image: vamsimattepu123/python-app-1:latest
-    container_name: auth
+    container_name: auth_service
     ports:
       - "5001:5000"
     restart: unless-stopped
