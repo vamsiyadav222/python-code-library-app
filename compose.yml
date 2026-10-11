@@ -16,7 +16,7 @@ services:
 
   borrow_service:
     image: vamsimattepu123/python-app-3:latest
-    container_name: borrow
+    container_name: borrow_service
     ports:
       - "5557:5000"
     restart: unless-stopped
