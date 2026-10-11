@@ -22,10 +22,10 @@ services:
     restart: unless-stopped
 
   database:
-    image: vamsimattepu123/python-app-4:latest
     container_name: database
-    environment:
-      MYSQL_ROOT_PASSWORD: root
+    image: vamsimattepu123/python-app-4:latest
+    ports:
+     - "3306:3306"
     volumes:
       - mysql_data:/var/lib/mysql
     restart: unless-stopped
